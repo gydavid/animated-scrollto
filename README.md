@@ -12,7 +12,7 @@ This is a simple function for animating scroll.
 button.addEventListener('click', function () {
     animatedScrollTo(
         document.body, // element to scroll with (most of times you want to scroll with whole <body>)
-        0, // target scrollY (0 means top of the page)
+        0, // target scrollX (0 means left of the page)
         10000, // duration in ms
         function() { // callback function that runs after the animation (optional)
           console.log('done!')
@@ -21,22 +21,16 @@ button.addEventListener('click', function () {
 });
 ```
 
-This will scroll to top of the page and the animation will run for 10 seconds (10000ms).
-
-## Available on Bower
-
-`bower install animated-scrollto`
-
-Just import with `<script>` and global function `animatedScrollTo` will be available for you.
+This will scroll to left/right of the page and the animation will run for 10 seconds (10000ms).
 
 ## Available with Browserify
 
-`npm install animated-scrollto`
+`npm install animated-scroller`
 
 In your browserify powered js:
 
 ```javascript
-var animatedScrollTo = require('animated-scrollto')
+var animatedScrollTo = require('animated-scroller')
 ```
 
 ## License
